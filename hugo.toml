@@ -9,6 +9,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Academic website of Rachel Salamatian"
+  image = "/images/lab_portrait.jpg"
   [params.author]
     name = "Rachel Salamatian"
     email = "rajacobs11@gmail.com"
