@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+keywords: ["Rachel Salamatian", "cultural psychology", "identity development", "multiracial identity", "social perception", "computational social science", "mixed methods"]
 featured_image: "lab_portrait.jpg"
 ---
 
