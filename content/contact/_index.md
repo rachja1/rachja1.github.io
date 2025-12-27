@@ -1,4 +1,4 @@
 ---
 title: "Contact"
 ---
-Email me at **rajacobs11@gmail.com**
+Feel free to reach out at **rajacobs11@gmail.com**

@@ -7,7 +7,7 @@ title: "How We Perceive Others: Interpersonal Perception"
 
 <div class="research-intro">
 
-This program examines how people infer traits and belonging from social category information, and how stereotypes are structured and activated.
+This program examines how people infer traits and belonging from social category information, and whether stereotypes are structured and activated.
 
 ### Current Projects
 
@@ -80,7 +80,7 @@ Published in Journal of Personality & Social Psychology (Hughes, Jacobson, Rule,
   <div class="project-figures">
     <div class="project-figure">
       <img src="/images/research/ISM_figure.jpg" alt="SEM path diagram for SES and credibility">
-      <div class="figcaption"><strong>Figure 3.</strong> SEM path diagram linking perceived SES to perceived credibility through trait inferences. Paths represent standardized regression coefficients; the indirect effect captures SES-based differences in credibility judgments operating through trait impressions.</div>
+      <div class="figcaption"><strong>Figure 3.</strong> SEM path diagram illustrating the Interpersonal Stereotype Model linking perceived SES to affiliation interest through SES-based trait inferences. Paths represent standardized regression coefficients; the indirect effect captures SES-based differences in affiliation interest operating through trait impressions.</div>
     </div>
   </div>
 
@@ -94,7 +94,7 @@ Published in Journal of Personality & Social Psychology (Hughes, Jacobson, Rule,
 
 ### Project 4 — Political Affiliation & Religiosity
 
-This project examines how political ideology and religiosity shape impression formation as interpersonal stereotypes in everyday interactions, guiding how people are perceived and who others want to affiliate with, even when these identities are not explicitly stated. The study draws on two undergraduate samples and one U.S. community sample (Ns = 224, 151, 297).
+This project examines how political ideology and religiosity shape impression formation as interpersonal stereotypes in everyday interactions, guiding how people are perceived and who others want to affiliate with, even when these identities are not explicitly stated. The study draws on two undergraduate samples and one U.S. adult sample (Ns = 224, 151, 297).
 Manuscript under review (Hughes, Jacobson, Pearman, Hamid, Rule, & Srivastava).
 
 **Key idea:** Political ideology, and less strongly, religiosity, shapes everyday social interaction, guiding first impressions and who people choose to connect with, even when politics is never discussed.
