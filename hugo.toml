@@ -9,7 +9,10 @@ enableRobotsTXT = true
 
 [params]
   description = "Academic website of Rachel Salamatian"
+
   image = "/images/lab_portrait.jpg"
+  images = ["images/lab_portrait.jpg"]
+
   [params.author]
     name = "Rachel Salamatian"
     email = "rajacobs11@gmail.com"
@@ -19,27 +22,27 @@ enableRobotsTXT = true
     github = "https://github.com/rachja1"
     linkedin = "https://www.linkedin.com/"
 
-  [menu]
-    [[menu.main]]
-      name = "Introduction"
-      url = "/"
-      weight = 1
-    [[menu.main]]
-      name = "Publications"
-      url = "/publications/"
-      weight = 2
-    [[menu.main]]
-      name = "Teaching & Mentoring"
-      url = "/teaching/"
-      weight = 3
-    [[menu.main]]
-      name = "Contact"
-      url = "/contact/"
-      weight = 4
-    [[menu.main]]
-      name = "Portfolio"
-      url = "/portfolio/"
-      weight = 5
+[menu]
+  [[menu.main]]
+    name = "Introduction"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 2
+  [[menu.main]]
+    name = "Teaching & Mentoring"
+    url = "/teaching/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 5
 
 [markup]
   [markup.goldmark]

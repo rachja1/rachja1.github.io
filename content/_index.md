@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+featured_image: "lab_portrait.jpg"
 ---
 
 # Rachel Salamatian, PhD
