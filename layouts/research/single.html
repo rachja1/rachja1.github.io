@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <section class="section">
+    {{ partial "title.html" . }}
+
+    {{ with .Content }}
+      <div class="content research-content">
+        {{ . }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
+

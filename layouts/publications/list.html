@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="section">
+    <h1>{{ .Title }}</h1>
+    
+    {{ with .Content }}
+      <div class="content">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div id="publications-container">
+      {{ $pub := .Site.Data.publications }}
+      {{ range $pub.categories }}
+        <div class="publications-category">
+          <h2 class="publications-category-title">{{ .name }}</h2>
+          <div class="publications-list">
+            {{ range .publications }}
+              <div class="publication-item">
+                <p class="publication-citation">
+                  {{ $authors := .authors }}
+                  {{ $authors = replace $authors "Jacobson, R." "<strong>Jacobson, R.</strong>" }}
+                  {{ $authors = replace $authors "Jacobson-Salamatian, R." "<strong>Jacobson-Salamatian, R.</strong>" }}
+                  {{ $authors | safeHTML }}. 
+                  {{ if .title }}<em>{{ .title }}</em>. {{ end }}
+                  {{ if .journal }}<em>{{ .journal }}</em>{{ end }}
+                  {{ if .edition }}, {{ .edition }}{{ end }}
+                  {{ if .volume }} {{ .volume }}{{ end }}
+                  {{ if .number }}({{ .number }}){{ end }}
+                  {{ if .pages }}, {{ .pages }}{{ end }}
+                  {{ if .year }} ({{ .year }}){{ end }}{{ if or .journal .year }}.{{ end }}
+                  {{ if .doi }} DOI: <a href="https://doi.org/{{ .doi }}" target="_blank">{{ .doi }}</a>{{ end }}
+                  {{ if .pdf }}<a href="{{ .pdf }}" class="publication-download" target="_blank" download>PDF</a>{{ end }}
+                </p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

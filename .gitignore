@@ -1,0 +1,17 @@
+# Hugo
+.hugo_build.lock
+public/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.Rhistory
+*.swp
+*.swo
+*~
+
+# Resources (generated)
+resources/_gen/
+

@@ -1,0 +1,45 @@
+{{ define "main" }}
+  <section class="section">
+    <h1>{{ .Title }}</h1>
+    
+    {{ with .Content }}
+      <div class="content">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div class="portfolio-categories">
+      {{ $portfolio := .Site.Data.portfolio }}
+      {{ range $portfolio.categories }}
+        <div class="portfolio-category">
+          <div class="portfolio-category-header" data-category="{{ .slug }}">
+            <h2 class="portfolio-category-title">{{ .name }}</h2>
+            <span class="portfolio-category-toggle">+</span>
+          </div>
+          {{ if .description }}
+            <p class="portfolio-category-description">{{ .description }}</p>
+          {{ end }}
+          <div class="portfolio-category-carousel {{ if eq .slug "field-notes" }}expanded{{ else }}collapsed{{ end }}" data-category="{{ .slug }}">
+            <div class="portfolio-carousel-track">
+              {{ range $index, $image := .images }}
+                <div class="portfolio-carousel-slide {{ if eq $index 0 }}active{{ end }}">
+                  <img src="{{ $image.src }}" alt="{{ $image.alt }}" loading="lazy" />
+                </div>
+              {{ end }}
+            </div>
+            {{ if gt (len .images) 1 }}
+              <div class="portfolio-carousel-nav">
+                <button class="portfolio-carousel-btn portfolio-carousel-prev" aria-label="Previous image">‹</button>
+                <button class="portfolio-carousel-btn portfolio-carousel-next" aria-label="Next image">›</button>
+              </div>
+              <div class="portfolio-carousel-dots"></div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <script src="/js/portfolio-carousel.js"></script>
+{{ end }}
+

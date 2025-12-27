@@ -1,0 +1,96 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-grid">
+
+      <div class="hero-photo">
+        <img src="/images/lab_portrait.jpg" alt="Rachel Salamatian headshot" />
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title">Rachel Salamatian, PhD</h1>
+        <p class="hero-subtitle">
+          Cultural psychologist studying identity development, interpersonal perception, and computational approaches to identity.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn" href="/cv/rachel-jacobson-cv.pdf">Download CV</a>
+          <a class="btn btn-secondary" href="/research/">Research</a>
+          <a class="btn btn-secondary" href="mailto:rajacobs11@gmail.com">Email</a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/rachja1">GitHub</a>
+          <span>·</span>
+          <a href="#">Google Scholar</a>
+          <span>·</span>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Research Areas</h2>
+
+    <div class="cards">
+
+      <a class="card" href="/research/identity-development/">
+        <h3>How we perceive ourselves</h3>
+        <p>Refining a cultural approach to multiracial identity development: self-concept structure, navigation strategies, rites of passage, and agency/communion.</p>
+      </a>
+
+      <a class="card" href="/research/perceiving-others/">
+        <h3>How we perceive others</h3>
+        <p>Understanding interpersonal stereotypes around race, gender, SES, political ideology, religiosity, and ethnoracial ambiguity.</p>
+      </a>
+
+      <a class="card" href="/research/regional-map/">
+        <h3>Regional identity mapping</h3>
+        <p>Mapping U.S. regions and acculturation pockets (in progress): how cultural markers cluster geographically and psychologically.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-categories">
+      {{ $portfolio := .Site.Data.portfolio }}
+      {{ range $portfolio.categories }}
+        {{ if eq .slug "field-notes" }}
+          <div class="portfolio-category">
+            <div class="portfolio-category-header" data-category="{{ .slug }}">
+              <h3 class="portfolio-category-title">{{ .name }}</h3>
+              <span class="portfolio-category-toggle">+</span>
+            </div>
+            {{ if .description }}
+              <p class="portfolio-category-description">{{ .description }}</p>
+            {{ end }}
+            <div class="portfolio-category-carousel expanded" data-category="{{ .slug }}">
+              <div class="portfolio-carousel-track">
+                {{ range $index, $image := .images }}
+                  <div class="portfolio-carousel-slide {{ if eq $index 0 }}active{{ end }}">
+                    <img src="{{ $image.src }}" alt="{{ $image.alt }}" loading="lazy" />
+                  </div>
+                {{ end }}
+              </div>
+              {{ if gt (len .images) 1 }}
+                <div class="portfolio-carousel-nav">
+                  <button class="portfolio-carousel-btn portfolio-carousel-prev" aria-label="Previous image">‹</button>
+                  <button class="portfolio-carousel-btn portfolio-carousel-next" aria-label="Next image">›</button>
+                </div>
+                <div class="portfolio-carousel-dots"></div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="portfolio-link">
+      <a href="/portfolio/" class="btn btn-secondary">View Full Portfolio →</a>
+    </div>
+  </section>
+
+  <script src="/js/portfolio-carousel.js"></script>
+{{ end }}

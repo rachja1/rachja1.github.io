@@ -1,0 +1,71 @@
+categories:
+  - name: Field Notes
+    slug: field-notes
+    description: Field notes and documentary photography
+    images:
+      - src: /images/field-notes/1DSC_6577-Edit-2.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/322.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/Blush-13.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/Blush-24.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/DSC_2402.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/DSC_5188-Edit.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/DSC_5243.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/DSC_5429-Edit.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/DSC_5503-Edit.jpg
+        alt: Field notes photography
+      - src: /images/field-notes/two.jpg
+        alt: Field notes photography
+      
+  - name: Commercial
+    slug: commercial
+    description: Commercial photography work
+    images:
+      - src: /images/commercial/1DSC_1424-Edit copy.jpg
+        alt: Commercial photography
+      - src: /images/commercial/antoine.jpg
+        alt: Commercial photography
+      - src: /images/commercial/joshy copy.jpg
+        alt: Commercial photography
+      - src: /images/commercial/joshy2 copy.jpg
+        alt: Commercial photography
+      - src: /images/commercial/ser_Bassline.jpg
+        alt: Commercial photography
+      - src: /images/commercial/ser_Whiskey.jpg
+        alt: Commercial photography
+      - src: /images/commercial/ser_zFAVV.jpg
+        alt: Commercial photography
+      - src: /images/commercial/z.jpg
+        alt: Commercial photography
+      
+  - name: Nocturne
+    slug: nocturne
+    description: Night photography and low-light work
+    images:
+      - src: /images/nocturne/1.jpg
+        alt: Nocturne photography
+      - src: /images/nocturne/2Red copy.jpg
+        alt: Nocturne photography
+      - src: /images/nocturne/DSC_0111-Edit.jpg
+        alt: Nocturne photography
+      
+  - name: Portrait
+    slug: portrait
+    description: Portrait photography
+    images:
+      - src: /images/portrait/2DSC_4816.jpg
+        alt: Portrait photography
+      - src: /images/portrait/DSC_2818-2.jpg
+        alt: Portrait photography
+      - src: /images/portrait/DSC_3539-Edit copy copy.jpg
+        alt: Portrait photography
+      - src: /images/portrait/saveprof.jpg
+        alt: Portrait photography
+
