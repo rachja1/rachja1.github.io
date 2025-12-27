@@ -12,7 +12,7 @@ I've taught and supported undergraduate courses at the University of Oregon (202
 
 I was a Teaching Fellow for undergraduate courses in Statistics & Statistical Programming, Cultural Psychology, and Mind & Society. I led three instructional labs per term for statistics and statistical programming (weekly), with hands-on support in Jamovi and quantitative reasoning. I also supervised discussions in cultural psychology and related courses, supporting term papers, essay writing, and research-based argumentation.
 
-### Teaching Assistantships (Selected Courses)
+## Teaching Assistantships (Selected Courses)
 
 #### **Quantitative Methods**
 
