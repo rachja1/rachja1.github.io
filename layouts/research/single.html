@@ -1,12 +1,12 @@
 {{ define "main" }}
   <section class="section">
-    {{ partial "title.html" . }}
+    <div class="content research-content">
+      <h1><a href="/">{{ .Title }}</a></h1>
 
-    {{ with .Content }}
-      <div class="content research-content">
+      {{ with .Content }}
         {{ . }}
-      </div>
-    {{ end }}
+      {{ end }}
+    </div>
   </section>
 {{ end }}
 
